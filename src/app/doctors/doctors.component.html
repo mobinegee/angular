@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>لیست دکترها</h1>
+  <div class="doctor-card" *ngFor="let doctor of doctors" (click)="openModal(doctor)">
+    <img src="images/1.jpeg" alt="عکس دکتر" class="doctor-img" />
+    <div class="doctor-info">
+      <h2>{{doctor.name}}</h2>
+      <p>تخصص: {{doctor.speciality}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" *ngIf="isModalOpen">
+  <div class="modal-overlay" (click)="closeModal()"></div>
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>{{selectedDoctor?.name}}</h2>
+    <p>روزهای موجود:</p>
+    <div class="slot-buttons">
+      <button
+        *ngFor="let slot of availableSlots"
+        [ngClass]="{'selected': slot.id === selectedSlotId, 'booked': slot.is_booked}"
+        (click)="confirmSlotSelection(slot)"
+        [disabled]="slot.is_booked"
+      >
+        {{ formatToJalali(slot.date) }} - {{ slot.time }} 
+        <span *ngIf="slot.is_booked">(رزرو شده)</span>
+      </button>
+    </div>
+  </div>
+</div>

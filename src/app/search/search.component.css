@@ -1,0 +1,92 @@
+.container {
+    padding: 20px;
+    direction: rtl;
+  }
+  
+  .doctor-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .doctor-card:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .doctor-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .doctor-info {
+    margin-left: 20px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    direction: rtl;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .slot-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .slot-buttons button {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff;
+  }
+  
+  .slot-buttons button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .slot-buttons button.selected {
+    background-color: #a8a0a0;
+    color: white;
+  }
+  
+  .slot-buttons button.booked {
+    color: gray;
+    cursor: not-allowed;
+  }
+  
