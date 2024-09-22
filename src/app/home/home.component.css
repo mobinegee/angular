@@ -1,4 +1,7 @@
-body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 .topnav {
   overflow: hidden;
@@ -30,18 +33,18 @@ body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
   float: left;
   overflow: hidden;
 }
-.dropdown button{
-    background-color: white;
-    border: 0px;
+.dropdown button {
+  background-color: white;
+  border: 0px;
 }
-.footer{
+.footer {
   width: 100%;
   position: fixed;
   bottom: 0px;
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   border: none;
   outline: none;
   color: rgb(78, 76, 76);
@@ -56,7 +59,7 @@ body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -69,12 +72,12 @@ body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
   text-align: left;
 }
 
-.topnav >  a:hover {
+.topnav > a:hover {
   background-color: #555;
   color: white;
 }
-.dropdown:hover img{
-    cursor: pointer;
+.dropdown:hover img {
+  cursor: pointer;
   /* width: 40px; */
 }
 
@@ -87,33 +90,33 @@ body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
   display: block;
 }
 .section {
-    position: fixed;
-    bottom: 0px;
+  position: fixed;
+  bottom: 0px;
   text-align: center;
   margin: 0 auto; /* مرکز کردن بخش به صورت عمودی */
   width: 100%;
   /* background-color: red; */
   padding: 50px 0; /* اضافه کردن فاصله داخلی برای زیبایی */
 }
-.section h3{
+.section h3 {
   margin-top: 30px;
   color: rgb(36, 36, 141);
 }
-.section h4{
+.section h4 {
   margin-top: 300px;
   /* background-color: rgba(59,130,246,.5); */
   background-color: #ddd;
   padding: 20px 0px 20px 0px;
   /* color: gray; */
 }
-.section h2{
+.section h2 {
   font-size: 30px !important;
 }
 
-.section h2{
+.section h2 {
   font-size: 40px;
 }
-.section input{
+.section input {
   width: 90%;
   text-align: right;
   font-size: 15px;
@@ -123,17 +126,34 @@ body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
   }
+  .section h2 {
+    margin-top: -100px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+  }
+  .section h3 {
+    font-size: 20px !important;
+  }
+  .section h4 {
+    font-size: 15px;
+  }
+  h2 {
+    margin-top: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -144,8 +164,12 @@ body {margin:0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
